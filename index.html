@@ -1,61 +1,19 @@
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-
-<body>
-  <img src="6.jpg" style="width:100%;height:40%">
-  <div class="w3-container">
-  </div>
-  <div class="w3-bar w3-red">
-    <button class="w3-bar-item w3-button" onclick="openCoffee('cafe latte')">cafe latte</button>
-    <button class="w3-bar-item w3-button" onclick="openCoffee('v60 coffee')">v60 coffee</button>
-    <button class="w3-bar-item w3-button" onclick="openCoffee('vietnam drip')">vietnam drip</button>
-    <button class="w3-bar-item w3-button" onclick="openCoffee('espresso')">espresso</button>
-    <button class="w3-bar-item w3-button" onclick="openCoffee('profile')">profile</button>
-  </div>
-  <div id="cafe latte" class="w3-container Coffee w3-animate-fading" style="display:none">
-    <h2>cafe latte</h2>
-    <img src="2.jpg" style="width:40%;height:40%">
-  </div>
-  <div id="v60 coffee" class="w3-container Coffee w3-animate-bottom" style="display:none">
-    <h2>v60 coffee</h2>
-    <img src="3.jfif" style="width:40%;height:40%">
-  </div>
-  <div id="vietnam drip" class="w3-container Coffee w3-animate-top" style="display:none">
-    <h2>vietnam drip</h2>
-    <img src="4.jfif" style="width:40%;height:40%">
-  </div>
-  <div id="espresso" class="w3-container Coffee w3-animate-zoom" style="display:none">
-    <h2>espresso</h2>
-    <img src="5.jpg" style="width:40%;height:40%">
-  </div>
-  <div class="w3-row">
-    <div id="profile" class="w3-container Coffee w3-animate-zoom" style="display:none">
-      <div class="w3-col w3-container m4 l3">
-        <img src="daffa.jpeg" style="width:250px;height:250px">
-      </div>
-      <div class="w3-col w3-container m8 l3">
-        <h2>NIM: 10120265
-          <br>
-          Nama: Daffa Bagus Syach Putra
-          <br>
-          Kelas: IF-7
-        </h2>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function openCoffee(namaCoffee) {
-      var i;
-      var x = document.getElementsByClassName("Coffee");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      document.getElementById(namaCoffee).style.display = "block";
-    }
-  </script>
-</body>
-
-</html>
+<head>
+<title>Menu Kofluck</title>
+</head>
+<frameset rows="10%,*,10%">
+   <frame src="content.html">
+     <frameset cols="15%,*,15%">
+     <frameset rows="50%,50%">
+   <frame src="koffie.html">
+  <frame src="signature.html">
+   </frameset> 
+     <frame src="tengah.html"name="tengah">
+    <frameset rows="50%,50%">
+  <frame src="nonkoffie.html">
+  <frame src="manual.html">
+  </frameset>
+  </frameset>
+<frame src="bawah.html">
+</frameset>
